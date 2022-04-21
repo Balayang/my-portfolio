@@ -1,0 +1,47 @@
+.sectionSubtitleAbout {
+	background: var(--clr-accent);
+	padding: 0.25em 1em;
+	font-family: var(--ff-secondary);
+	margin-bottom: 1em;
+}
+
+.aboutMe {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.aboutMeImg {
+	box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+	.aboutMe {
+		display: grid;
+		grid-template-columns: 1fr 200px;
+		grid-template-areas:
+			'title img'
+			'text img'
+			'subtitle img';
+		grid-column-gap: 2em;
+	}
+
+	.sectionTitleAbout {
+		grid-area: title;
+	}
+
+	.sectionSubtitleAbout {
+		grid-column: 1 / -1;
+		grid-row: 2;
+		position: relative;
+		left: -1em;
+		width: calc(100% + 2em);
+		padding-left: 1em;
+		padding-right: calc(200px + 4em);
+	}
+
+	.aboutMeImg {
+		grid-area: img;
+		position: relative;
+		z-index: 2;
+	}
+}

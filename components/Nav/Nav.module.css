@@ -1,0 +1,40 @@
+.headerStyle {
+	width: 100vw;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--white);
+	position: fixed;
+	z-index: 2;
+
+	background-color: var(--clr-light);
+}
+
+.logo {
+	max-width: 100px;
+	margin: 0.5rem 3rem;
+}
+
+.nav {
+	height: 50px;
+	padding: 10px;
+	display: flex;
+}
+
+.nav ul {
+	display: flex;
+	margin: 0.5rem 3rem;
+	list-style: none;
+}
+
+.nav li a {
+	padding: 0.625rem 1.25rem;
+	display: block;
+	color: var(--clr-dark);
+	text-decoration: none;
+}
+
+.nav li a:hover {
+	background: var(--clr-accent);
+}
