@@ -4,10 +4,8 @@ import styles from './AboutMe.module.css';
 const AboutMe = () => {
 	return (
 		<section className={styles.aboutMe} id="about">
-			<h2 className={`${styles.sectionTitle} ${styles.sectionTitleAbout}`}>
-				Who I am
-			</h2>
-			<p className={`${styles.sectionSubtitle} ${styles.sectionSubtitleAbout}`}>
+			<h2 className={styles.sectionTitle}>Who I am</h2>
+			<p className={styles.sectionSubtitle}>
 				Designer and developer based out of NYC
 			</p>
 
@@ -29,8 +27,9 @@ const AboutMe = () => {
 				src={`/images/dev-jane-02.jpg`}
 				alt="a picture of Michaela Pupikova"
 				class={styles.aboutMeImg}
-				width={250}
-				height={250}
+				layout="intrinsic"
+				width="1x"
+				height="1x"
 			></Image>
 		</section>
 	);

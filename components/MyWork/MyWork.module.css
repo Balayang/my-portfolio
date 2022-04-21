@@ -1,0 +1,19 @@
+.sectionTitle {
+  margin-bottom: .25em;
+}
+
+.sectionSubtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.myWork {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;    
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

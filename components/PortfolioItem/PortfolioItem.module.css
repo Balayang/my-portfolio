@@ -1,0 +1,19 @@
+.portfolioItem {
+  background: var(--clr-accent);
+  overflow: hidden;
+  cursor: pointer;
+  transition: 
+      transform 750ms cubic-bezier(.5, 0, .5, 1),
+      opacity 250ms linear;
+}
+
+.portfolioItem:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolioItem:hover,
+.portfolioItem:focus .portfolioItem {
+  transform: scale(1.2);
+  opacity: .5;
+}
