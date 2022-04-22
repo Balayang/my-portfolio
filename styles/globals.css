@@ -29,6 +29,10 @@
 
 /* General styles */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: var(--clr-light);
 	color: var(--clr-dark);
@@ -51,9 +55,7 @@ strong {
 	font-weight: var(--fw-bold);
 }
 
-:focus {
-	background: var(--clr-accent);
-}
+
 
 /* Buttons */
 

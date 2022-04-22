@@ -1,36 +1,48 @@
-import Image from 'next/image';
+import Link from 'next/link';
 import styles from './AboutMe.module.css';
 
 const AboutMe = () => {
 	return (
-		<section className={styles.aboutMe} id="about">
-			<h2 className={styles.sectionTitle}>Who I am</h2>
-			<p className={styles.sectionSubtitle}>
-				Designer and developer based out of NYC
-			</p>
+		<section className={styles.myServices} id="about">
+			<h2 className={styles.sectionTitle}>What I do</h2>
+			<div className={styles.services}>
+				<div className={styles.service}>
+					<h3>Design + Development</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat.
+					</p>
+				</div>
 
-			<div className={styles.aboutMeBody}>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat.
-				</p>
+				<div className={styles.service}>
+					<h3>E-Commerce</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat.
+					</p>
+				</div>
+
+				<div className={styles.service}>
+					<h3>WordPress</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat.
+					</p>
+				</div>
 			</div>
-			<Image
-				src={`/images/dev-jane-02.jpg`}
-				alt="a picture of Michaela Pupikova"
-				class={styles.aboutMeImg}
-				layout="intrinsic"
-				width="1x"
-				height="1x"
-			></Image>
+
+	
+			<div className={styles.btn}>
+				<Link href="#work" className={styles.btnLink}>
+					My Work
+				</Link>
+			</div>
 		</section>
 	);
 };

@@ -1,54 +1,70 @@
-.aboutMe {
-	max-width: 1000px;
-	margin: 0 auto;
+.myServices {
+	background-color: var(--clr-dark);
+	background-image: url(../../public/images/services-bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	color: var(--clr-light);
+	text-align: center;
 }
 
 .sectionTitle {
-	margin-bottom: 0.25em;
+	color: var(--clr-accent);
+	position: relative;
+	text-shadow: var(--bs);
 }
 
-.sectionSubtitle {
-	margin: 0;
-	font-size: var(--fs-h3);
+.sectionTitle::after {
+	content: '';
+	display: block;
+	width: 2em;
+	height: 1px;
+	margin: 0.5em auto 1em;
+	background: var(--clr-light);
+	opacity: 0.25;
+}
+
+.services {
+	margin-bottom: 4em;
+}
+
+.service {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+	.services {
+		display: flex;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.service + .service {
+		margin-left: 2em;
+	}
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.5em 2.5em;
 	background: var(--clr-accent);
-	padding: 0.25em 1em;
+	cursor: pointer;
+	transition: transform 200ms ease-in-out;
+}
+
+.btn a {
+	font-weight: var(--fw-bold);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--clr-dark);
+	text-decoration: none;
 	font-family: var(--ff-secondary);
-	margin-bottom: 1em;
+	text-shadow: var(--bs);
 }
 
-.aboutMeImg {
+.btn:hover {
+	transform: scale(1.1);
 	box-shadow: var(--bs);
-	object-fit: contain;
-}
-
-@media (min-width: 600px) {
-	.aboutMe {
-		display: grid;
-		grid-template-columns: 1fr 200px;
-		grid-template-areas:
-			'title img'
-			'text img'
-			'subtitle img';
-		grid-column-gap: 2em;
-	}
-
-	.sectionTitle {
-		grid-area: title;
-	}
-
-	.sectionSubtitle {
-		grid-column: 1 / -1;
-		grid-row: 2;
-		position: relative;
-		left: -1em;
-		width: calc(100% + 2em);
-		padding-left: 1em;
-		padding-right: calc(200px + 4em);
-	}
-
-	.aboutMeImg {
-		grid-area: img;
-		position: relative;
-		z-index: 2;
-	}
+	filter: brightness(120%);
 }

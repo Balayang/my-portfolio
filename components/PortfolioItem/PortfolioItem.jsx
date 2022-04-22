@@ -9,12 +9,11 @@ const PortfolioItem = () => {
 
 	return (
 		<Image
-    className={styles.portfolioItem}
+			className={styles.portfolioItem}
 			src={`/images/portfolio-01.jpg`}
 			alt=""
-			layout="fill"
-			width="1x"
-			height="1x"
+			height={300}
+			width={300}
 			onClick={() => openInNewTab('https://stackoverflow.com')}
 		></Image>
 	);

@@ -6,7 +6,18 @@ const MyWork = () => {
 		<section className={styles.myWork} id="work">
 			<h2 className={styles.sectionTitle}>My work</h2>
 			<p className={styles.sectionSubtitle}>A selection of my range of work</p>
-			<div className={styles.portfolio}></div>
+			<div className={styles.portfolio}>
+				<PortfolioItem />
+				<PortfolioItem />
+				<PortfolioItem />
+				<PortfolioItem />
+				<PortfolioItem />
+				<PortfolioItem />
+				<PortfolioItem />
+				<PortfolioItem />
+				<PortfolioItem />
+				<PortfolioItem />
+			</div>
 		</section>
 	);
 };
