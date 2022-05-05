@@ -18,11 +18,17 @@ export const Card = ({ item }) => {
   return (
     <div className={styles.card}>
       {badgeText && <div className={styles.cardBadge}>{badgeText}</div>}
-      <img className={styles.cardImage} src={item.coverImg} alt="image" height={400} width={300} />
+      <img
+        className={styles.cardImage}
+        src={`/image${item.coverImg}.png`}
+        alt="image"
+        height={400}
+        width={300}
+      />
       <div className={styles.cardStats}>
         <img src="/star.png" alt="star" width="14px" height="14px" />
-        <span>{item.rating} </span>
-        <span className={styles.gray}>({item.reviewCount}) • </span>
+        <span>{item.stats.rating} </span>
+        <span className={styles.gray}>({item.stats.reviewCount}) • </span>
         <span className={styles.gray}>{item.location}</span>
       </div>
       <p className={styles.cardTitle}>{item.title}</p>
