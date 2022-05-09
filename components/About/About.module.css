@@ -1,4 +1,4 @@
-.myServices {
+.about {
   background-color: var(--clr-dark);
   background-image: url(../../public/images/services-bg.jpg);
   background-attachment: fixed;
@@ -27,7 +27,7 @@
   margin-bottom: 4em;
 }
 
-.service {
+.aboutCard {
   max-width: 500px;
   margin: 0 auto;
 }
@@ -40,7 +40,7 @@
     margin-right: auto;
   }
 
-  .service + .service {
+  .aboutCard + .aboutCard {
     margin-left: 2em;
   }
 }
