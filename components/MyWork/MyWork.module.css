@@ -1,26 +1,26 @@
 .myWork {
-	text-align: center;
+  text-align: center;
 }
 
 .sectionTitle {
-	margin-bottom: 0.25em;
-	text-shadow: var(--bs);
+  margin-bottom: 0.25em;
+  text-shadow: var(--bs);
 }
 
 .sectionSubtitle {
-	margin: 0 4rem;
-	font-size: var(--fs-h3);
-	margin-bottom: 1em;
-	padding: 0.25em 1em;
-	background: var(--clr-accent);
-	font-family: var(--ff-secondary);
-	text-shadow: var(--bs);
+  margin: 0 4rem;
+  font-size: var(--fs-h3);
+  margin-bottom: 1em;
+  padding: 0.25em 1em;
+  background: var(--clr-accent);
+  font-family: var(--ff-secondary);
+  text-shadow: var(--bs);
 }
 
 .portfolio {
-	padding-top: 60px;
-	display: grid;
-	gap: 10px;
-	position: relative;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-top: 60px;
+  display: grid;
+  gap: 10px;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
