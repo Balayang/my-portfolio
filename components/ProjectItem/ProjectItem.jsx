@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './PortfolioItem.module.css';
 
-const PortfolioItem = () => {
+const ProjectItem = () => {
   const openInNewTab = url => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
     if (newWindow) newWindow.opener = null;
@@ -19,4 +19,4 @@ const PortfolioItem = () => {
   );
 };
 
-export default PortfolioItem;
+export default ProjectItem;

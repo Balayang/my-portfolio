@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Introduction from '../components/Introduction/Introduction';
 import About from '../components/About/About';
-import MyWork from '../components/MyWork/MyWork';
+import Projects from '../components/Projects/Projects';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <Introduction />
       <About />
-      <MyWork />
+      <Projects />
     </>
   );
 }
